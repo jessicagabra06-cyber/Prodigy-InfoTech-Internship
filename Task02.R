@@ -112,7 +112,7 @@ ggplot(titanic, aes(x = Survived, fill = Survived)) +
 ggplot(titanic, aes(x = Sex, fill = factor(Survived))) +
   geom_bar(position = "dodge") +
   scale_fill_manual(
-    values = c("red", "steelblue"),   # 👈 "teal" → "steelblue" or "#008080"
+    values = c("red", "steelblue"),   # "teal" "steelblue" or "#008080"
     labels = c("Died", "Survived"),
     name = "Survival Status"
   ) +
@@ -201,3 +201,4 @@ ggplot(titanic, aes(x = factor(Pclass), y = Fare, fill = factor(Survived))) +
     fill = "Survival Status"
   ) +
   theme_minimal()
+
